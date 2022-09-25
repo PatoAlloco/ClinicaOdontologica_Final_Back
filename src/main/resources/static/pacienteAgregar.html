@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cargar Paciente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/paciente_post.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+            <h3>Agregar Paciente</h3>
+            <form id="add_new_paciente">
+
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="number" class="form-control" id="dni">
+                </div>
+
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha">
+                </div>
+
+                <div class="mb-3">
+                    <label for="calle" class="form-label">Calle</label>
+                    <input type="text" class="form-control" id="calle">
+                </div>
+
+                <div class="mb-3">
+                    <label for="numero" class="form-label">Numero</label>
+                    <input type="number" class="form-control" id="numero">
+                </div>
+
+                <div class="mb-3">
+                    <label for="localidad" class="form-label">Localidad</label>
+                    <input type="text" class="form-control" id="localidad">
+                </div>
+
+                <div class="mb-3">
+                    <label for="provincia" class="form-label">Provincia</label>
+                    <input type="text" class="form-control" id="provincia">
+                </div>
+
+                <button type="submit" class="btn btn-danger" id="btn-add-new-premio">Guardar</button>
+                <a type="button" class="btn btn-danger" href="/pacientesList.html">Volver</a>
+            </form>
+
+            <div id="response" style="display:none; margin-top:10px">
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
